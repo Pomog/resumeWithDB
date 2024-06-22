@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+<!-- Wrapper -->
+<div class="wrapper" onclick="shakeBody()">
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- My Info -->
+        <div class="my-info">
+            <h2 class="my-profession">Front-End Developer</h2>
+            <h1 class="my-name">Yurii Panasiuk</h1>
+            <p class="my-descr">
+                Hello,
+                <br>
+                I am writing to express my keen interest in the Software Engineer I (Java/Spring Boot) position at Fanatics Betting and Gaming.
+                I am drawn to Fanatics' mission of enhancing the fan experience.
+                <br>
+                My journey in software development began in 2022 when I started studying Java to deepen my understanding of various technologies.
+                In 2023, I enrolled in Kood/Jõhvi to acquire comprehensive and systematized knowledge about software development methodologies and best practices.
+                <br>
+                Additionally, I have experience with the Spring framework, SQL databases, and AWS.
+                I am eager to implement my technical skills and passion to contribute effectively to your team.
+                <br>
+                I am eager to learn more about how my skills align with your team's needs and to contribute to FBG.
+                <br>
+                Thank you for considering my application.
+                I look forward to the possibility of discussing how I can contribute to your team's goals.
+                <br><br>
+                Sincerely,
+                <br>
+                Yurii Panasiuk
+            </p>
+        </div>
+        <!-- My Projects -->
+        <!-- TODO: Add https://github.com/Pomog/autofix - StringModificationFunc -->
+        <div class="my-projects-container">
+            <table class="table table-hover my-projects-list">
+                <thead>
+                <tr>
+                    <h3 class="my-projects-title">Projects</h3>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row" class="my-projects-num">1.</th>
+                    <td class="my-projects-link"><a id="ForumFFF" href="https://github.com/Pomog/ForumFFF"
+                                                    target="_blank"
+                                                    onclick="saveClickedProjectToLocalStorage(this.id)"
+                    >Forum for MMORPG fans and
+                        friends</a></td>
+                    <td class="my-projects-tech">Golang</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="my-projects-num">2.</th>
+                    <td class="my-projects-link"><a id="DBSCAN" href="https://github.com/Pomog/DBSCAN"
+                                                    target="_blank"
+                                                    onclick="saveClickedProjectToLocalStorage(this.id)"
+                    >DBSCAN and
+                        Graham scan for
+                        image analysis</a>
+                    </td>
+                    <td class="my-projects-tech">Java</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="my-projects-num">3.</th>
+                    <td class="my-projects-link"><a id="JavaDBstudying" href="https://github.com/Pomog/JavaDBstudying"
+                                                    target="_blank"
+                                                    onclick="saveClickedProjectToLocalStorage(this.id)"
+                    >SQL, Spring</a></td>
+                    <td class="my-projects-tech">SQL H2 database, Spring framework</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Work Experience -->
+        <div class="experience-container">
+            <h3 class="experience">Work Experience</h3>
+            <!-- Company 1 -->
+            <div>
+                <h4 class="place-of-work">TBD Pharmatech</h4>
+                <p class="period">2021 <span class="separator">|</span> Present</p>
+                <ul class="responsibilities">
+                    <li class="responsibilities-list">Synthesis of organic molecules</li>
+                </ul>
+            </div>
+            <!-- Company 2 -->
+            <div>
+                <h4 class="place-of-work">Enamine Ltd</h4>
+                <p class="period">2012 <span class="separator">|</span> 2021</p>
+                <ul class="responsibilities">
+                    <li class="responsibilities-list">Custom synthesis projects</li>
+                    <li class="responsibilities-list">Synthesis of organic molecules</li>
+                    <li class="responsibilities-list">Development of purification methods for synthesized compounds
+                        (scale
+                        from 10 mg to 100 g)
+                    </li>
+                </ul>
+            </div>
+            <!-- Company 3 -->
+            <div>
+                <h4 class="place-of-work">Dnepropetrovsk State Biofactory</h4>
+                <p class="period">2005 <span class="separator">|</span> 2012</p>
+                <ul class="responsibilities">
+                    <li class="responsibilities-list">Veterinary Drugs Production</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Education -->
+        <div class="experience-container">
+            <h3 class="experience-title">Education</h3>
+            <h4 class="university">Ukrainian State Chemical
+                Technology University</h4>
+            <p class="period">2000 <span class="separator">|</span> 2005</p>
+            <p class="responsibilities">Master degree, Pharmacy
+                and Technology</p>
+        </div>
+    </div>
+
+    <!-- SideBar -->
+    <aside class="sidebar">
+        <div id="photo">
+            <img src="img/photo1.jpg" alt="My photo" width="100%">
+        </div>
+        <div class="sidebar-content">
+            <!-- Contacts -->
+            <div class="contacts-section">
+                <h3 class="contacts-title">Contacts</h3>
+                <p class="contacts-item"><span class="contacts-type">C:</span> <a class="contacts-link"
+                                                                                  href="tel:+37258043564">+372
+                    580-43-564</a></p>
+                <p><span class="contacts-type">E:</span> <a class="contacts-link"
+                                                            href="mailto:thoryur@gmail.com">thoryur@gmail.com</a>
+                </p>
+            </div>
+            <!-- Skills -->
+            <div class="skills-section">
+                <!-- Tech skills -->
+                <h3 class="skills-title">Tech Skills</h3>
+                <ul class="skills-list">
+                    <li class="skills-list-item">Java</li>
+                    <li class="skills-list-item">Go</li>
+                    <li class="skills-list-item">HTML, CSS, JS</li>
+                    <li class="skills-list-item">Database. SQL</li>
+                    <li class="skills-list-item">Version Control. Git</li>
+                    <li class="skills-list-item">Spring Framework</li>
+                    <li class="skills-list-item">AWS Knowledge: Cloud Essentials</li>
+                    <li class="skills-list-item">Organic Chemistry</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <!-- Soft Skills -->
+                <h3 class="skills-title">Soft Skills</h3>
+                <ul class="skills-list">
+                    <li class="skills-list-item">Agile</li>
+                    <li class="skills-list-item">Teamwork</li>
+                </ul>
+            </div>
+        </div>
+
+        <button id="sendDataButton">Send Data to Server</button>
+
+    </aside>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+<script src="js/script.js">
+
+
+</script>
+
+</body>
+
+</html>
