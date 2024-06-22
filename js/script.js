@@ -1,6 +1,6 @@
 const body = document.body;
 const photo = document.getElementById("photo");
-const endpoint = "http://localhost:8085/receive-data"
+const endpoint = "http://3.72.208.221:8090/receive-data"
 
 const shake1 = "shake1";
 const shake2 = "shake2";
