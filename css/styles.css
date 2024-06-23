@@ -129,13 +129,18 @@ li {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  text-align: justify;
+  text-indent: 1em;
+}
+.indent {
+  display: inline-block;
+  width: 1em;
 }
 
 .my-info {
   margin-bottom: 40px;
 }
 
-/* My Projects */
 .my-projects-link {
   color: #005fff;
   font-size: 14px;
@@ -223,6 +228,10 @@ li {
   margin-top: 0px;
 }
 
+.hide{
+  display: none;
+}
+
 .shake1 {
   animation: spin 0.02s ease-in-out infinite;
 }
@@ -231,7 +240,7 @@ li {
   0% {
     transform: rotate(0deg);
   }
-  100% {
+  1% {
     transform: rotate(1deg);
   }
 }
